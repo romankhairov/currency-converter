@@ -1,0 +1,56 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Roman Khairov\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add bulma
+
+PATH: 
+  C:\Users\Roman Khairov\Documents\GitHub\remind-to-get-vanillajs\node_modules\.bin;C:\Users\Roman Khairov\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Roman Khairov\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Users\Roman Khairov\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\Common Files\Autodesk Shared;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Brackets\command;C:\Program Files\Git\cmd;C:\Program Files\nodejs;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0;%SYSTEMROOT%\System32\OpenSSH;C:\Users\Roman Khairov\AppData\Local\Microsoft\WindowsApps;C:\Users\Roman Khairov\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\Roman Khairov\AppData\Roaming\npm;C:\Users\Roman Khairov\AppData\Local\atom\bin;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.6.0
+
+Node version: 
+  8.9.4
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: write EPIPE
+      at _errnoException (util.js:1022:11)
+      at Socket._writeGeneric (net.js:767:25)
+      at Socket._write (net.js:786:8)
+      at doWrite (_stream_writable.js:387:12)
+      at writeOrBuffer (_stream_writable.js:373:5)
+      at Socket.Writable.write (_stream_writable.js:290:11)
+      at Socket.write (net.js:704:40)
+      at Object.clearLine (readline.js:1111:12)
+      at clearLine (C:\Users\Roman Khairov\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:50992:12)
+      at ConsoleReporter._log (C:\Users\Roman Khairov\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:93207:43)
+
+npm manifest: 
+  {
+    "name": "remind-to-get-vanillajs",
+    "version": "1.0.0",
+    "description": "To-do list on Vanilla JavaScript",
+    "main": "index.js",
+    "scripts": {
+      "dev": "parcel index.html",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/romankhairov/remind-to-get-vanillajs.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/romankhairov/remind-to-get-vanillajs/issues"
+    },
+    "homepage": "https://github.com/romankhairov/remind-to-get-vanillajs#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
