@@ -1,0 +1,25 @@
+{
+  "name": "zloty-to-hryvnia-converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html --public-url ./ -d app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romankhairov/zloty-to-hryvnia-converter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/romankhairov/zloty-to-hryvnia-converter/issues"
+  },
+  "homepage": "https://github.com/romankhairov/zloty-to-hryvnia-converter#readme",
+  "dependencies": {
+    "bulma": "^0.7.1"
+  }
+}
