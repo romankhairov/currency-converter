@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/romankhairov/zloty-to-hryvnia-converter#readme",
   "dependencies": {
-    "bulma": "^0.7.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.2.0"
   }
 }
