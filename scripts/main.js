@@ -9,7 +9,7 @@ let amount = 100;
 const plnUah = amount * pln/uah;
 console.log(plnUah);
 
-// -----------Date Block------------
+//#region Date Block
 
 var today = new Date();
 var dd = today.getDate();
@@ -27,14 +27,16 @@ if(mm<10) {
 today = `${mm}/${dd}/${yyyy}`;
 console.log(today);
 
-// -----------Date Block End------------
+//#endregion Date 
 
-// -----------Converter Block------------
+
+//#region Converter Block
+const forUah = uahPln();
 
 function uahPln(amount, pln, uah) {
-    const calc = amount * pln/uah;
+    const calc = amount * pln / uah;
     return calc;
 };
 console.log(uahPln(amount, pln, uah));
 
-// -----------Converter Block End------------
+//#endregion Converter Block
