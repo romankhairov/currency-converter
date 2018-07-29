@@ -3,8 +3,8 @@ let pln = 1;
 let amount = 100;
 
 
-const uahPln = amount * uah/pln;
-console.log(uahPln);
+// const uahPln = amount * uah/pln;
+// console.log(uahPln);
 
 const plnUah = amount * pln/uah;
 console.log(plnUah);
@@ -29,4 +29,12 @@ console.log(today);
 
 // -----------Date Block End------------
 
-// ----------- Block------------
+// -----------Converter Block------------
+
+function uahPln(amount, pln, uah) {
+    const calc = amount * pln/uah;
+    return calc;
+};
+console.log(uahPln(amount, pln, uah));
+
+// -----------Converter Block End------------
