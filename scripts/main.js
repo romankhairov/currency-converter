@@ -31,12 +31,13 @@ console.log(today);
 
 
 //#region Converter Block
-const forUah = uahPln();
+const forUah = uahPln(amount, pln, uah);
 
 function uahPln(amount, pln, uah) {
     const calc = amount * pln / uah;
     return calc;
 };
-console.log(uahPln(amount, pln, uah));
+console.log(forUah);
+console.log(forUah);
 
 //#endregion Converter Block
