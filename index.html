@@ -4,7 +4,7 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <!-- Compiled and minified CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css"> -->
 
 
     <!--Let browser know website is optimized for mobile-->
@@ -12,9 +12,9 @@
     <title>Zloty to hryvnia converter</title>
   </head>
 
-  <body>
+  <body class="blue-grey lighten-5">
     
-<div class="blue-grey lighten-5">
+<div>
   <div class="container">
     <div class="row center">
       <div class="col s6 offset-s3">
@@ -36,28 +36,28 @@
 
                 <div class="row">
                   <div class="col s12">
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <input type="number" id="pln-input">
-                        <label for="autocomplete-input">PLN</label>
+                      <div class="input-field col s6">
+                        <input type="text" onfocus="this.value=''" id="pln-input">  
                       </div>
-                    </div>
+                      <div class="input-field col s6">
+                          <select id="currency1"></select>                     
+                        </div>
                   </div>
                 </div>
 
                 <div class="row">
                     <div class="col s12">
-                      <div class="row">
-                        <div class="input-field col s12">
-                          <input type="number" id="uah-input">
-                          <label for="autocomplete-input">UAH</label>
+                        <div class="input-field col s6">
+                          <input type="text" onfocus="this.value=''" id="uah-input">                         
                         </div>
-                      </div>
+                        <div class="input-field col s6">
+                          <select id="currency2"></select>                     
+                        </div>
                     </div>
                   </div>
     
                   <button class="btn-floating btn--ok btn-large halfway-fab waves-effect waves-light"><i class="material-icons">check</i></button>  
-            
+                  <!-- <button class="btn-floating left btn--ok btn-large halfway-fab red waves-effect waves-light"><i class="material-icons">delete</i></button>   -->
             
             </form>
 
@@ -69,6 +69,8 @@
   </div>
 
 </div>
+
+
   
     <script src="scripts/main.js" charset="utf-8"></script>
 

@@ -3,9 +3,12 @@ let pln = 1;
 let amount = 200;
 
 const $btnOk = document.querySelector(".btn--ok");
-const $plnInput = document.querySelector("#pln-input");
-const $uahInput = document.querySelector("#uah-input");
+const $plnInput = document.getElementById("pln-input");
+const $uahInput = document.getElementById("uah-input");
 
+$(document).ready(function() {
+    $('select').material_select();
+});
 
 // const uahPln = amount * uah/pln;
 // console.log(uahPln);
@@ -49,22 +52,24 @@ $btnOk.addEventListener("click", function(e){
     e.preventDefault();
 
     // 1. Select and read data from input
-    const plnAmount = $plnInput.value;
-    const uahAmount = $uahInput.value;
+    const plnAmount = ~~parseInt($plnInput.value); // use "~~" for convert string into 0
+    const uahAmount = ~~parseInt($uahInput.value);
+
+    
+    // (typeof plnAmount !== "NaN") ? (plnAmount * pln / uah) : (console.log("Enter a number!"));
 
     // 2. Calculate
 
     if(plnAmount.length !== 0) {
-        const plnValue = plnAmount * pln / uah;
-        console.log(plnValue);
+        $uahInput.value = plnAmount * pln / uah;
     } else {
-        const uahValue = uahAmount * uah / pln;
-        console.log(uahValue);
-    }
-    
+        $plnInput.value = uahAmount * uah / pln;
+    } 
+
     
     // 3. Output data to UI
   
+
 
 });
 
