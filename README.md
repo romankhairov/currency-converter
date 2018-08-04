@@ -1,1 +1,2 @@
-# zloty-to-hryvnia-converter
+# currency-converter
+using Fixer.io API
