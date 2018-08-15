@@ -27,8 +27,12 @@ function loadData(){
     serverData.onreadystatechange = function() {
         if(serverData.readyState == 4 && serverData.status == 200) {
             const obj = JSON.parse(this.responseText);
-            const options = '';
-            for(key in obj.rates);
+            let options = '';
+            for(key in obj.rates) {
+                options = options + `<option>` + key + `</option>`;
+            }
+            currency1.innerHTML = options;
+            currency2.innerHTML = options;
         }
     }
 }
