@@ -20,21 +20,23 @@ console.log(today);
 
 //#region Load Data
 
-function loadData(){
-    const currency1 = document.getElementById('currency1');
-    const currency2 = document.getElementById('currency2');
-    const serverData = new XMLHttpRequest();
-    serverData.onreadystatechange = function() {
-        if(serverData.readyState == 4 && serverData.status == 200) {
-            const obj = JSON.parse(this.responseText);
-            let options = '';
+function loadCurrency(){
+    const from = document.getElementById('from');
+    const to = document.getElementById('to');
+    const xHttp = new XMLHttpRequest();
+    xHttp.onreadystatechange = function() {
+        if(xHttp.readyState == 4 && xHttp.status == 200) {
+            var obj = JSON.parse(this.responseText);
+            var options = '';
             for(key in obj.rates) {
                 options = options + `<option>` + key + `</option>`;
             }
-            currency1.innerHTML = options;
-            currency2.innerHTML = options;
+            from.innerHTML = options;
+            to.innerHTML = options;
         }
     }
+    xHttp.open('GET', 'http://data.fixer.io/api/latest?access_key=257ae29ed773f02d9a2eb8f55cc1bddc', true);
+    xHttp.send();
 }
 
 //#endregion Load Data

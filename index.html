@@ -10,9 +10,10 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Currency Converter</title>
+    <script src="scripts/main.js" charset="utf-8"></script>
   </head>
 
-  <body onload="loadData()" class="blue-grey lighten-5">
+  <body onload="loadCurrency()" class="blue-grey lighten-5">
     
 <div>
   <div class="container">
@@ -42,10 +43,10 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col s2">From:</div>
-                            <div class="col s4"><select onchange="convertCurrency()" id="from"></select></div>
-                            <div class="col s2">To:</div>
-                            <div class="col s4"><select onchange="convertCurrency()" id="to"></select></div>
+                            <div class="col s3">From:</div>
+                            <div class="col s3"><select onchange="convertCurrency()" id="from"></select></div>
+                            <div class="col s3">To:</div>
+                            <div class="col s3"><select onchange="convertCurrency()" id="to"></select></div>
                         </div>
                         <div class="row">
                             Result: <span id="result"></span>
@@ -69,7 +70,7 @@
 
 
   
-    <script src="scripts/main.js" charset="utf-8"></script>
+    
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
