@@ -10,7 +10,7 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Currency Converter</title>
-    <script src="scripts/main.js" charset="utf-8"></script>
+    <!-- <script src="scripts/main.js" charset="utf-8"></script> -->
   </head>
 
   <body onload="loadCurrency()" class="blue-grey lighten-5">
@@ -22,12 +22,12 @@
           <div class="card-content">
             <h1 class="header center grey-text">Converter</h1>
             
-            <div class="time">
+            <!-- <div class="time">
 
               <p class="grey-text">Today: 07/28/2018</p>
               <h6 class="grey-text">1 PLN = 7.23 UAH</h6>
 
-            </div>
+            </div> -->
             
   
             <form action="#">
@@ -44,9 +44,11 @@
                         </div>
                         <div class="row">
                             <div class="col s3">From:</div>
-                            <div class="col s3"><select onchange="convertCurrency()" id="from"></select></div>
+                            <div class="col s3"><select id="from">
+                              
+                            </select></div>
                             <div class="col s3">To:</div>
-                            <div class="col s3"><select onchange="convertCurrency()" id="to"></select></div>
+                            <div class="col s3"><select id="to"></select></div>
                         </div>
                         <div class="row">
                             Result: <span id="result"></span>
