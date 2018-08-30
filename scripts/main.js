@@ -18,7 +18,7 @@
 
 //#endregion Date 
 
-//#region Load Data
+//#region LoadCurrency
 
 function loadCurrency(){
     const from = document.getElementById('from');
@@ -40,4 +40,30 @@ function loadCurrency(){
     xHttp.send();
 }
 
-//#endregion Load Data
+//#endregion LoadCurrency
+
+//#region 
+
+function convertCurrency(){
+    const from = document.getElementById('from').value;
+    const to = document.getElementById('from').value;
+    const amount = document.getElementById('amount').value;
+    const result = document.getElementById('result');
+
+    if(from.length > 0 && to.length > 0 && amount.length > 0) {
+        const xHttp = new XMLHttpRequest();
+        xHttp.onreadystatechange = function(){
+            if(xHttp.readyState == 4 && xHttp.status == 200) {
+                const obj = JSON.parse(this.responseText);
+                const fact = parseFloat(obj.rates[from]);
+                if(fact!=undefined){
+                    result.innerHTML = parseFloat(amount) * fact;
+                }
+            }
+        }
+        xHttp.open('GET', 'http://api.fixer.io/latest?base=' + from + '&symbols=' + to, true);
+        xHttp.send();
+    }
+}
+
+//#endregion 
