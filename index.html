@@ -10,61 +10,61 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Currency Converter</title>
-    <!-- <script src="scripts/main.js" charset="utf-8"></script> -->
+    <script src="scripts/main.js" charset="utf-8"></script>
   </head>
 
-  <body onload="loadCurrency()" class="blue-grey lighten-5">
+  <body onload="loadCurrency()">
   <!-- <body class="blue-grey lighten-5"></body> -->
     
-<div>
-  <div class="container">
-    <div class="row center">
-        <div class="card large"> 
-          <div class="card-content">
-            <h1 class="header center grey-text">Converter</h1>
-            
-            <div class="time">
-              <div id="date">Today: </div>
-            </div>
-            
-  
-            <form action="#">
-                  <div class="container">
-                      <div >
-                        <div class="row header">
-                          Currency Converter
-                        </div>
-                        <div class="row">
-                          <div class="col s4">Amount:</div>
-                            <div class="col s8">
-                              <input type="text" oninput="convertCurrency()" class="form-control" id="amount"/>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col s3">From:</div>
-                            <div class="col s3"><select id="from"></select></div>
-                            <div class="col s3">To:</div>
-                            <div class="col s3"><select id="to"></select></div>
-                        </div>
-                        <div class="row">
-                            Result: <span id="result"></span>
-                        </div>
+        <div>
+          <div class="container">
+            <div class="row center">
+                <div class="card large"> 
+                  <div class="card-content">
+                    <h1 class="header center grey-text">Converter</h1>
+                    
+                    <div class="time">
+                      <div id="date">Today: </div>
                     </div>
+                    
+          
+                    <form action="#">
+                          <div class="container">
+                              <div >
+                                <div class="row header">
+                                  Currency Converter
+                                </div>
+                                <div class="row">
+                                  <div class="col s4">Amount:</div>
+                                    <div class="col s8">
+                                      <input type="text" oninput="convertCurrency()" class="form-control" id="amount"/>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s3">From:</div>
+                                    <div class="col s3"><select id="from"></select></div>
+                                    <div class="col s3">To:</div>
+                                    <div class="col s3"><select id="to"></select></div>
+                                </div>
+                                <div class="row">
+                                    Result: <span id="result"></span>
+                                </div>
+                            </div>
+                          </div>
+            
+                          <button class="btn-floating btn--ok btn-large halfway-fab waves-effect waves-light"><i class="material-icons">check</i></button>  
+                          <!-- <button class="btn-floating left btn--ok btn-large halfway-fab red waves-effect waves-light"><i class="material-icons">delete</i></button>   -->
+                    
+                    </form>
+
+                    
                   </div>
-    
-                  <button class="btn-floating btn--ok btn-large halfway-fab waves-effect waves-light"><i class="material-icons">check</i></button>  
-                  <!-- <button class="btn-floating left btn--ok btn-large halfway-fab red waves-effect waves-light"><i class="material-icons">delete</i></button>   -->
-            
-            </form>
-
-            
+                </div>
+              
+            </div>
           </div>
-        </div>
-      
-    </div>
-  </div>
 
-</div>
+        </div>
 
 
   
@@ -72,7 +72,7 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-  
+    <script src="scripts/time.js" charset="utf-8"></script>
   </body>
 
 </html>
