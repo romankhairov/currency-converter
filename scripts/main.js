@@ -1,5 +1,5 @@
 //#region Date Block
-
+const $date = document.getElementById('date');
 var today = new Date();
 var dd = today.getDate();
 var mm = today.getMonth()+1; //January is 0!
@@ -13,8 +13,8 @@ if(mm<10) {
     mm = '0'+ mm
 } 
 
-today = `${mm}/${dd}/${yyyy}`;
-console.log(today);
+today = `Today: ${mm}/${dd}/${yyyy}`;
+$date.innerHTML = today;
 
 //#endregion Date 
 
