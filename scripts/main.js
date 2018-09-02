@@ -22,7 +22,7 @@ function loadCurrency(){
 
 //#endregion LoadCurrency
 
-//#region 
+//#region convertCurrency
 
 function convertCurrency(){
     const from = document.getElementById('from').value;
@@ -46,5 +46,5 @@ function convertCurrency(){
     }
 }
 
-//#endregion 
+//#endregion convertCurrency
 
